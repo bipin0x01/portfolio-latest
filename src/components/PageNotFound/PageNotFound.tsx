@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function PageNotFound() {
     return (
         <>
@@ -194,7 +196,7 @@ export default function PageNotFound() {
                     </g>
                 </svg>
                     <h3>Page not Found!</h3>
-                    <a className="btn btn-outline-primary mt-1" href="/">Go Back Home</a>
+                    <Link passHref href="/"><a className="btn btn-outline-primary mt-1">Go Back Home</a></Link>
                 </div>
             </div>
         </>
