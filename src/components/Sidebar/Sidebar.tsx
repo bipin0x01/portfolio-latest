@@ -25,7 +25,7 @@ export default function Sidebar() {
                             </button>
                         </div>
                         <div className="sidebar-button-cv sidebar-button">
-                            <Link href="/static/CV.pdf">
+                            <Link href="/static/CV.pdf" passHref>
                                 <button type="button" className="btn btn-primary btn-lg">
                                     <FaDownload />
                                     <div className="download-cv">
