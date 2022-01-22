@@ -1,0 +1,40 @@
+
+/* Navbar */
+.navbar{
+    box-shadow: -4px 6px 50px 10px black;
+    opacity: 0.8;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 999;
+    border-radius: 60px;
+    top: 2%;
+    position: fixed;
+    width: max-content;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .navbrand{
+    position: relative;
+  }
+
+  .horizontal{
+
+  }
+
+  .vertical{
+    
+  }
+
+  .navLink{
+    transition: 500ms;
+    font-weight: 600;
+    color: white!important;
+  }
+
+
+  .navLink:hover{
+     color: #007bff!important;
+     text-shadow: #242526;
+  }
+  
