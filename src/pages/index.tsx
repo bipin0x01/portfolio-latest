@@ -80,6 +80,7 @@ export default function Home() {
       <ProjectsSection>
         {projects.map((project, index) => (
           <ProjectCard
+            key={index}
             title={project.title}
             Img={project.image}
             description={project.description}
