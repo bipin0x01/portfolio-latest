@@ -58,11 +58,13 @@ video {
   text-align: center;
   color: #fff;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  width: inherit;
+  padding: 20px;
 }
 
 /* Footer */
