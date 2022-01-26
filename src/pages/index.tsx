@@ -67,22 +67,15 @@ const timelineDate = [
   {
     company: "Bipin Thapa Pvt. Ltd.",
     position: "Software Engineer",
-    from: "2020",
-    to: "2020",
+    from: 2018,
+    to: 2019,
     roles: "Software Engineer",
   },
   {
     // company: "Bipin Thapa Pvt. Ltd.",
     position: "Software Engineer",
-    from: "2020",
-    to: "2020",
-    roles: "Software Engineer",
-  },
-  {
-    company: "Bipin Thapa Pvt. Ltd.",
-    position: "Software Engineer",
-    from: "2020",
-    to: "2020",
+    from: 2019,
+    to: 2020,
     roles: "Software Engineer",
   },
 ];

@@ -1,3 +1,5 @@
+import { ITimelineItem } from "../../interfaces/ITimelineItem";
+
 const defaultProps = {
   position: "Freelancer",
   from: "2019",
@@ -6,7 +8,13 @@ const defaultProps = {
     "My role was to build a website for a local business. I was responsible for the frontend and backend development.",
 };
 
-export default function TimelineItem({ position, from, to, roles, company }) {
+export default function TimelineItem({
+  position,
+  from,
+  to,
+  roles,
+  company,
+}: ITimelineItem) {
   return (
     <div className="timeline-item">
       <div className="content">
