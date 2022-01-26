@@ -63,6 +63,30 @@ const blogdata = [
   },
 ];
 
+const timelineDate = [
+  {
+    company: "Bipin Thapa Pvt. Ltd.",
+    position: "Software Engineer",
+    from: "2020",
+    to: "2020",
+    roles: "Software Engineer",
+  },
+  {
+    // company: "Bipin Thapa Pvt. Ltd.",
+    position: "Software Engineer",
+    from: "2020",
+    to: "2020",
+    roles: "Software Engineer",
+  },
+  {
+    company: "Bipin Thapa Pvt. Ltd.",
+    position: "Software Engineer",
+    from: "2020",
+    to: "2020",
+    roles: "Software Engineer",
+  },
+];
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -79,13 +103,16 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <Timeline>
-        <TimelineItem />
-        <TimelineItem
-          position="IT Incharge"
-          from={2018}
-          to={"Present"}
-          roles="My role was to lorem"
-        />
+        {timelineDate.map((item, index) => (
+          <TimelineItem
+            key={index}
+            company={item.company}
+            position={item.position}
+            from={item.from}
+            to={item.to}
+            roles={item.roles}
+          />
+        ))}
       </Timeline>
       <SkillsetsSection />
       <ProjectsSection>
