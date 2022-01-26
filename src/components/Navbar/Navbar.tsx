@@ -26,8 +26,12 @@ export default function MainNavbar() {
               />
             </Navbar.Brand>
             <Nav className="me-auto">
-              {NavItems.map((item) => (
-                <Nav.Link href={item.link} className={styles.navLink}>
+              {NavItems.map((item, index) => (
+                <Nav.Link
+                  key={index}
+                  href={item.link}
+                  className={styles.navLink}
+                >
                   {item.name}
                 </Nav.Link>
               ))}

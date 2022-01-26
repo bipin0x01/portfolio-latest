@@ -1,53 +1,77 @@
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import SkillLogo from "./SkillLogo";
 
 export default function SkillsetsSection() {
-    return (
-        <>
-            <section id="skills">
-                <div className="container col-lg-10 mx-auto my-5">
-                    <div className="py-2  text-center">
-                        <h1><strong>Skills</strong></h1>
-                    </div>
-                    <div className="row container toolslogo">
-                        <div className="col">
-                            <SkillLogo
-                                img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
-                                alt="Python" />
-                        </div>
-                        <div className="col">
-                            <SkillLogo
-                                img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
-                                alt="Python" />
-                        </div>
-                        <div className="col">
-                            <SkillLogo
-                                img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
-                                alt="Python" />
-                        </div>
-                        <div className="col">
-                            <SkillLogo
-                            img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
-                            alt="Python" />
-                        </div>
-                    </div>
-                </div>
-                <div data-tilt className="toolslogo-bg">
-                    <span>
-                        <p>ReactJS</p>
-                        {/* <p style="top: -12px;left: 190px;font-size: 12px;">ES6</p>
-                        <p style="left: 342px;top: 190px;font-size: 19px;">Django</p>
-                        <p style="top: 30px;right: 900px;font-size: 12px;">Redux</p>
-                        <p style="top: 130px;right: 60px;font-size: 16px;">MongoDB</p>
-                        <p style="top: 120px;left: 80px;font-size: 11px;">Figma</p>
-                        <p style="top: 240px;right: 240px;font-size: 23px;">Docker</p>
-                        <p style="top: 290px;left: 150px;font-size: 11px;">BurpSuite</p>
-                        <p style="top: 300px;right: 555px;font-size: 16px;">Radare</p> */}
-                        <p >Wordpress</p>
-                        <p>AWS</p>
-                    </span>
-                </div>
-            </section>
-        </>
-    );
+  const [maxvalues, setmaxvalues] = useState(["0px", "0px"]);
+
+  useEffect(() => {
+    const skillsection = document.getElementById("skills");
+
+    let maxlength = skillsection.offsetHeight;
+    let maxwidth = skillsection.offsetWidth;
+
+    setmaxvalues(["" + maxlength, "" + maxwidth]);
+  }, []);
+
+  function random(min, max) {
+    const num = Math.random() * (max - min + 1) + min;
+    return Math.floor(num);
+  }
+
+  const mainskills = [
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png",
+      name: "Python",
+    },
+  ];
+
+  const otherskills = [
+    { name: "CSS" },
+    { name: "JavaScript" },
+    { name: "React" },
+    { name: "Redux" },
+    { name: "Node" },
+    { name: "Express" },
+    { name: "MongoDB" },
+    { name: "Python" },
+    { name: "Django" },
+    { name: "SQL" },
+    { name: "CSS" },
+  ];
+  return (
+    <>
+      <section id="skills">
+        <div className="container col-lg-10 mx-auto my-5">
+          <div className="py-2  text-center">
+            <h1>
+              <strong>Skills</strong>
+            </h1>
+          </div>
+          <div className="row container toolslogo">
+            <div className="col">
+              {mainskills.map((skill) => (
+                <SkillLogo img={skill.image} alt={skill.name} />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div data-tilt className="toolslogo-bg">
+          <span>
+            {otherskills.map((skill) => (
+              <p
+                style={{
+                  top: random(0, maxvalues[0]),
+                  right: random(0, maxvalues[1]),
+                  fontSize: random(8, 25),
+                }}
+              >
+                {skill.name}
+              </p>
+            ))}
+          </span>
+        </div>
+      </section>
+    </>
+  );
 }
