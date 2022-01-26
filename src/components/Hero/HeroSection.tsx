@@ -18,7 +18,7 @@ const defaultProps = {
     title: ["Full Stack Web Developer", "Content Writer", "Crypto Trader", "CyberSecurity Enthusiast", "SEO Practitioner"],
     name: "Bipin Thapa",
     img: "/static/pp.jpg",
-    bio: "I am a web developer with a passion for building and designing beautiful and functional websites. I am currently working as a freelancer and I am looking for a new challenge to work on."
+    bio: "I am a web developer with a passion for building and designing beautiful and functional websites."
 }
 
 
