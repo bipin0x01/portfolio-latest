@@ -65,18 +65,47 @@ const blogdata = [
 
 const timelineDate = [
   {
-    company: "Bipin Thapa Pvt. Ltd.",
-    position: "Software Engineer",
-    from: 2018,
-    to: 2019,
-    roles: "Software Engineer",
+    company: "Vines Software Innovation Company(VSIC)",
+    position: "Web Developer Intern",
+    from: " July 2018",
+    to: "Dec 2018",
+    roles:
+      "My role was to assist junior as senior developers in turning the figma designs into working web pages.",
   },
   {
-    // company: "Bipin Thapa Pvt. Ltd.",
-    position: "Software Engineer",
-    from: 2019,
-    to: 2020,
-    roles: "Software Engineer",
+    position: "Content Writer/SEO Analyst",
+    company: "passivefinancer.com",
+    from: "2017",
+    to: "2019",
+    roles:
+      "Content Research, Blog Post Creation and On page and Off-Page as well as Technical SEO.",
+  },
+  {
+    position: "Freelance Web Developer",
+    from: "2018",
+    to: "Present",
+    roles:
+      "Worked on freelance web development projects like gamemandu, icartnepal, rural.ao,cashkar, etc. Some of which can be found in my portfolio.",
+  },
+  {
+    position: "Infosec Enthusiast and Independent Security Researcher",
+    from: "2018",
+    to: "Present",
+    roles:
+      "Started studying Cyber Security Concepts and doing Independent Research",
+  },
+  {
+    position: "CTF Player",
+    from: "2019",
+    to: "Present",
+    roles:
+      "Started Participating in online Capture the Flag(CTF) Contests out of which most are Jeopardy-style.",
+  },
+  {
+    position: "Chief Technology Officer(CTO) and Web Developer Lead",
+    from: 2020,
+    to: "Present",
+    roles: "Manage and Lead the team of web developers.",
   },
 ];
 
