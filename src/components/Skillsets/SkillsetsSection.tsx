@@ -50,16 +50,17 @@ export default function SkillsetsSection() {
           </div>
           <div className="row container toolslogo">
             <div className="col">
-              {mainskills.map((skill) => (
-                <SkillLogo img={skill.image} alt={skill.name} />
+              {mainskills.map((skill, index) => (
+                <SkillLogo key={index} img={skill.image} alt={skill.name} />
               ))}
             </div>
           </div>
         </div>
         <div data-tilt className="toolslogo-bg">
           <span>
-            {otherskills.map((skill) => (
+            {otherskills.map((skill, index) => (
               <p
+                key={index}
                 style={{
                   top: random(0, maxvalues[0]),
                   right: random(0, maxvalues[1]),
