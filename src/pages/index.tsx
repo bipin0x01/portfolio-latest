@@ -17,6 +17,41 @@ import {
   Footer,
 } from "../components";
 
+const projects = [
+  {
+    title: "Project 1",
+    image: "https://via.placeholder.com/150",
+    description: "This is a project description",
+    demoLink: "",
+    codeLink: "",
+    tags: ["react", "node", "express"],
+  },
+  {
+    title: "Project 2",
+    image: "https://via.placeholder.com/150",
+    description: "This is a project description",
+    demoLink: "",
+    codeLink: "",
+    tags: ["react", "node", "express"],
+  },
+  {
+    title: "Project 3",
+    image: "https://via.placeholder.com/150",
+    description: "This is a project description",
+    demoLink: "",
+    codeLink: "",
+    tags: ["react", "node", "express"],
+  },
+  {
+    title: "Project 4",
+    image: "https://via.placeholder.com/150",
+    description: "This is a project description",
+    demoLink: "",
+    codeLink: "",
+    tags: ["react", "node", "express"],
+  },
+];
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -43,15 +78,16 @@ export default function Home() {
       </Timeline>
       <SkillsetsSection />
       <ProjectsSection>
-        {/* <ProjectCard title="Audit Management System" Img="/static/pp.jpg" description="asdasd" liveUrl="https://google.com" githubUrl="https://google.com" tags={['reactjs','MERN','Nodejs']} /> */}
-        <ProjectCard
-          title="Audit Management System"
-          Img="/static/pp.jpg"
-          description="asdasd"
-          liveUrl="https://google.com"
-          githubUrl="https://google.com"
-          tags={["reactjs", "MERN", "Nodejs"]}
-        />
+        {projects.map((project, index) => (
+          <ProjectCard
+            title={project.title}
+            Img={project.image}
+            description={project.description}
+            liveUrl={project.demoLink}
+            githubUrl={project.codeLink}
+            tags={project.tags}
+          />
+        ))}
       </ProjectsSection>
       <BlogSection>
         <BlogCard
