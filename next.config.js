@@ -1,7 +1,7 @@
-/** @type {import('next').NextConfig} */     // eslint-disable-line  @typescript-eslint/no-explicit-any
+/** @type {import('next').NextConfig} */ // eslint-disable-line  @typescript-eslint/no-explicit-any
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['upload.wikimedia.org']
-  }
-}
+    domains: ["upload.wikimedia.org", "via.placeholder.com"],
+  },
+};
