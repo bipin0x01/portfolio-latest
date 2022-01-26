@@ -1,24 +1,62 @@
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
+import {
+  FaCode,
+  FaFacebook,
+  FaGithub,
+  FaHeart,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
 
 export default function Footer() {
   const socialLinks = [
     {
-      link: "https://github.com/bipin0x01",
       name: "Github",
-      icon: "fab fa-github",
-      color: "color: rgb(108, 117, 125);",
-      hovercolor: "#db4437",
+      link: "https://github.com/bipin0x01",
+    },
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/bipin-thapa-b9a8a11a4/",
+    },
+    {
+      name: "Twitter",
+      link: "https://twitter.com/bipin0x01",
+    },
+    {
+      name: "Instagram",
+      link: "https://www.instagram.com/bipin0x01/",
+    },
+    {
+      name: "Facebook",
+      link: "https://www.facebook.com/bt.kaji",
     },
   ];
+
+  function socialicons(name) {
+    switch (name.toLowerCase()) {
+      case "github":
+        return <FaGithub />;
+      case "linkedin":
+        return <FaLinkedin />;
+      case "twitter":
+        return <FaTwitter />;
+      case "instagram":
+        return <FaInstagram />;
+      case "facebook":
+        return <FaFacebook />;
+      default:
+        return null;
+    }
+  }
+
   return (
     <>
       <section id="footer">
         <footer className="mt-auto py-3 text-center">
           <small className="mb-2">
-            <i className="fas fa-code"></i> with{" "}
-            <i className="fas fa-heart"></i>
-            by <strong>Bipin Thapa</strong>
+            <FaCode style={{ color: "green" }} /> with{" "}
+            <FaHeart style={{ color: "red" }} /> by <strong>Bipin Thapa</strong>
           </small>
           <div className="container-fluid justify-content-center">
             {/* <a
@@ -31,12 +69,12 @@ export default function Footer() {
               <i className="fas fa-envelope fa-1x"></i>
             </a> */}
             {socialLinks.map((item, index) => (
-              <Link key={index} passHref href={item.link}>
+              <Link key={index} href="/asas">
                 <a
                   className="social mx-1"
                   style={{ color: "rgb(108, 117, 125)" }}
                 >
-                  <FaGithub />
+                  {socialicons(item.name)}
                 </a>
               </Link>
             ))}
