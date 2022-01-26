@@ -52,6 +52,17 @@ const projects = [
   },
 ];
 
+const blogdata = [
+  {
+    title: "Audit Management System",
+    image: "https://via.placeholder.com/250",
+    description: "This is a blog description",
+    author: "Kaji",
+    date: "2020",
+    tags: ["react", "node", "express"],
+  },
+];
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -91,14 +102,17 @@ export default function Home() {
         ))}
       </ProjectsSection>
       <BlogSection>
-        <BlogCard
-          title="Audit Management System"
-          Img="/static/pp.jpg"
-          description="asdasd"
-          author="Kaji"
-          date="2020"
-          tags={["reactjs", "js"]}
-        />
+        {blogdata.map((blog, index) => (
+          <BlogCard
+            key={index}
+            title={blog.title}
+            Img={blog.image}
+            description={blog.description}
+            author={blog.author}
+            date={blog.date}
+            tags={blog.tags}
+          />
+        ))}
       </BlogSection>
       <ContactSection />
       <Footer />
