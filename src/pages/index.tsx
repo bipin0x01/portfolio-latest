@@ -20,7 +20,7 @@ import {
 const projects = [
   {
     title: "Project 1",
-    image: "https://via.placeholder.com/150",
+    image: "https://via.placeholder.com/250",
     description: "This is a project description",
     demoLink: "",
     codeLink: "",
@@ -28,7 +28,7 @@ const projects = [
   },
   {
     title: "Project 2",
-    image: "https://via.placeholder.com/150",
+    image: "https://via.placeholder.com/250",
     description: "This is a project description",
     demoLink: "",
     codeLink: "",
@@ -36,7 +36,7 @@ const projects = [
   },
   {
     title: "Project 3",
-    image: "https://via.placeholder.com/150",
+    image: "https://via.placeholder.com/250",
     description: "This is a project description",
     demoLink: "",
     codeLink: "",
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     title: "Project 4",
-    image: "https://via.placeholder.com/150",
+    image: "https://via.placeholder.com/250",
     description: "This is a project description",
     demoLink: "",
     codeLink: "",
