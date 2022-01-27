@@ -1,6 +1,6 @@
 import { MainNavbar } from "../../components";
 
-export default function () {
+export default function blogpost() {
   return (
     <>
       <MainNavbar />
