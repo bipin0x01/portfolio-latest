@@ -516,7 +516,7 @@ section#sidebar {
   margin-bottom: 20px;
 }
 
-.sidebar-button > button {
+.sidebar-button > a > button {
   border-radius: 50%;
   height: 65px;
   width: 65px;
@@ -536,7 +536,7 @@ section#sidebar {
   opacity: 0.9;
 }
 
-.sidebar-button-cv > button {
+.sidebar-button-cv > a > button {
   border-radius: 40%;
   padding: 5px;
   height: 80px;
