@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["upload.wikimedia.org", "via.placeholder.com"],
+    domains: ["upload.wikimedia.org", "via.placeholder.com", "github.com"],
   },
 };

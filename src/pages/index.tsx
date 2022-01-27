@@ -19,12 +19,22 @@ import {
 
 const projects = [
   {
-    title: "Project 1",
-    image: "https://via.placeholder.com/250",
-    description: "This is a project description",
-    demoLink: "",
-    codeLink: "",
-    tags: ["react", "node", "express"],
+    title: "Audit Firm Management System",
+    image:
+      "https://github.com/bipin0x01/AuditManagement/raw/main/Screenshots/dashboard.PNG?raw=true",
+    description:
+      "An IMS designed to manage audit firms. It is a web application based on MERN Stack. It can be used to keep the data of audit firms,their employees, clients and their respective audit reports.",
+    demoLink: "https://auditmanagementthapa.herokuapp.com/login",
+    codeLink: "https://github.com/bipin0x01/AuditManagement",
+    tags: [
+      "react",
+      "node",
+      "express",
+      "Mongodb",
+      "Multer",
+      "JWTAuth",
+      "Heroku",
+    ],
   },
   {
     title: "Project 2",

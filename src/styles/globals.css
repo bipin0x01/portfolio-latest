@@ -191,8 +191,6 @@ section#projects {
 #project-buttons {
   align-self: center;
   justify-content: space-around;
-  top: 45%;
-  opacity: 0.9;
 }
 
 #project-buttons button {
