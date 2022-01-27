@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithubAlt } from "react-icons/fa";
 
+const defaultProps = {
+  githubUrl: "#",
+  liveUrl: "#",
+  Img: "https://via.placeholder.com/400",
+};
+
 export default function ProjectCard({
   title,
   Img,
@@ -85,3 +91,5 @@ export default function ProjectCard({
     </>
   );
 }
+
+ProjectCard.defaultProps = defaultProps;

@@ -37,16 +37,34 @@ const projects = [
     ],
   },
   {
-    title: "Project 2",
-    image: "https://via.placeholder.com/250",
+    title: "Qselly",
+    image:
+      "https://github.com/bipin0x01/portfolio2.0/blob/master/Qselly.screenshot.PNG?raw=true",
+    description:
+      "A fullstack webapp project for creating multiple stores. This project was in collaboration with a friend of mine named Bipul Poudel. I was responsible mainly for creating the frontend of the admin panel.",
+    demoLink: "https://qselly.vercel.app/",
+    tags: [
+      "react",
+      "node",
+      "Chakra-UI",
+      "MongoDB",
+      "Vercel",
+      "Typescript",
+      "Cloudinary",
+      "Nextjs",
+      "Chartjs",
+      "ContextAPI",
+    ],
+  },
+  {
+    title: "React Expense Tracker",
     description: "This is a project description",
     demoLink: "",
     codeLink: "",
     tags: ["react", "node", "express"],
   },
   {
-    title: "Project 3",
-    image: "https://via.placeholder.com/250",
+    title: "React Expense Tracker",
     description: "This is a project description",
     demoLink: "",
     codeLink: "",
@@ -54,7 +72,6 @@ const projects = [
   },
   {
     title: "Project 4",
-    image: "https://via.placeholder.com/250",
     description: "This is a project description",
     demoLink: "",
     codeLink: "",
