@@ -51,7 +51,7 @@ export default function ProjectCard({
                 return (
                   <span
                     key={i}
-                    className="badge badge-pill text-primary border border-primary ml-1"
+                    className="badge badge-pill text-primary border border-primary m-1"
                   >
                     {item}
                   </span>
