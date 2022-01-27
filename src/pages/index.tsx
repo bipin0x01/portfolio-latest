@@ -34,6 +34,7 @@ const projects = [
       "Multer",
       "JWTAuth",
       "Heroku",
+      "Redux",
     ],
   },
   {
@@ -108,6 +109,45 @@ const projects = [
     demoLink: "https://bipin0x01.github.io/Web-Login-and-Register-UI/",
     codeLink: "https://github.com/bipin0x01/Web-Login-and-Register-UI",
     tags: ["css3", "html5", "javascript"],
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "A portfolio website for showcasing my projects, blogs and experiences.",
+    image:
+      "https://github.com/bipin0x01/portfolio2.0/raw/master/demo.png?raw=true",
+    demoLink: "https://portfolio-with-nextjs-peach.vercel.app/",
+    codeLink: "https://github.com/bipin0x01/portfolio-with-nextjs",
+    tags: [
+      "css3",
+      "ReactJS",
+      "NextJs",
+      "Typescript",
+      "ParticlesJs",
+      "React Bootstrap",
+    ],
+  },
+  {
+    title: "Python Online Class Bot",
+    description:
+      "A simple UI for python online class bot. The bot can be used to take online classes on assigned time.",
+    codeLink: "https://github.com/bipin0x01/Online-Class-Bot-UI-with-Tkinter",
+    tags: ["python", "Tkinter", "desktop app design"],
+  },
+  {
+    title: "Youtube Favourite List",
+    description:
+      "A simple UI for Youtube Favourite List. It can be used to add and remove favourite videos from a list.",
+    codeLink: "https://github.com/bipin0x01/youtubeList",
+    demoLink: "#",
+    tags: ["ReactJs", "ExpressJS", "Nodejs", "MongoDB", "Bootstrap"],
+  },
+  {
+    title: "Python Django CRUD App",
+    description:
+      "A simple CRUD app using python and django. It basically allows the user to add, update, delete and view the information about the writers from database.",
+    codeLink: "https://github.com/bipin0x01/Django-CRUD-App/",
+    tags: ["python", "django", "postgresql", "crud"],
   },
 ];
 
