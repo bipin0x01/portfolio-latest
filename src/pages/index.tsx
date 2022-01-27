@@ -238,6 +238,7 @@ export default function Home() {
           property="og:site_name"
           content="Bipin Thapa - Personal Portfolio Site"
         />
+        <meta property="og:url" content="https://www.bipin00x1.com.np" />
         <link rel="icon" href="/static/favicon.ico" />
       </Head>
       <Sidebar />

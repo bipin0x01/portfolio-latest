@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
   FaCode,
   FaFacebook,
@@ -59,24 +58,12 @@ export default function Footer() {
             <FaHeart style={{ color: "red" }} /> by <strong>Bipin Thapa</strong>
           </small>
           <div className="container-fluid justify-content-center">
-            {/* <a
-              className="social mx-1"
-              href="https://facebook.com/bt.kaji"
-              style="color: rgb(108, 117, 125);"
-              onmouseover="this.style.color='#db4437'"
-              onmouseout="this.style.color='#6c757d'"
-            >
-              <i className="fas fa-envelope fa-1x"></i>
-            </a> */}
             {socialLinks.map((item, index) => (
-              <Link key={index} href="/asas">
-                <a
-                  className="social mx-1"
-                  style={{ color: "rgb(108, 117, 125)" }}
-                >
+              <a target="_blank" key={index} href={item.link}>
+                <button className="btn btn-link social mx-1">
                   {socialicons(item.name)}
-                </a>
-              </Link>
+                </button>
+              </a>
             ))}
           </div>
         </footer>
