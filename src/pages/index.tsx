@@ -16,6 +16,8 @@ import {
   ProjectCard,
   Footer,
 } from "../components";
+import { Button } from "react-bootstrap";
+import Link from "next/link";
 
 const projects = [
   {
@@ -259,7 +261,7 @@ export default function Home() {
       </Timeline>
       <SkillsetsSection />
       <ProjectsSection>
-        {projects.map((project, index) => (
+        {projects.slice(0, 3).map((project, index) => (
           <ProjectCard
             key={index}
             title={project.title}
