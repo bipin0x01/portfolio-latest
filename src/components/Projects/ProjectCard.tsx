@@ -5,7 +5,7 @@ import { FaGithubAlt } from "react-icons/fa";
 const defaultProps = {
   githubUrl: "#",
   liveUrl: "#",
-  Img: "https://via.placeholder.com/400",
+  Img: "https://via.placeholder.com/400?text=Preview+Image+Unavailable",
 };
 
 export default function ProjectCard({

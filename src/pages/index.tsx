@@ -57,25 +57,57 @@ const projects = [
     ],
   },
   {
-    title: "React Expense Tracker",
-    description: "This is a project description",
-    demoLink: "",
-    codeLink: "",
-    tags: ["react", "node", "express"],
+    title: "CryptoVerse - The Ultimate Crypto Hub",
+    description:
+      "Cryptoverse is an React app that shows realtime information and price updates about major cryptocurrencies as well as latest news . ReactQuery is used for updating data from a free API's endpoints from Rapidapi.",
+    demoLink: "https://crypto-verse-five.vercel.app/",
+    codeLink: "https://github.com/bipin0x01/CryptoVerse",
+    tags: ["ReactQuery", "ReactJS", "Ant Design", "Chartjs"],
   },
   {
     title: "React Expense Tracker",
-    description: "This is a project description",
-    demoLink: "",
-    codeLink: "",
-    tags: ["react", "node", "express"],
+    image:
+      "https://github.com/bipin0x01/react-expense-tracker/blob/main/expense%20tracker.PNG?raw=true",
+    description:
+      "Simple React App Design which can be used to track your expenses. This is just a non working component verison .",
+    demoLink: "https://react-expense-tracker-liard.vercel.app/",
+    codeLink: "https://github.com/bipin0x01/react-expense-tracker",
+    tags: ["pure css", "react", "node"],
   },
   {
-    title: "Project 4",
-    description: "This is a project description",
+    title: "AGNOTES",
+    description:
+      "Website Design for a note sharing website for students of Far Western University.",
+    image: "https://imgur.com/BKfBbNb.png",
+    demoLink: "https://bipin0x01.github.io/agnotes/",
+    codeLink: "https://github.com/bipin0x01/agnotes",
+    tags: ["css3", "html5", "bootstrap", "javascript"],
+  },
+  {
+    title: "Python Port Scanner - CLI Tool",
+    description:
+      "A simple python port scanner which can be used to scan ports on a host.",
+    image: "https://imgur.com/Y9y992G.png",
     demoLink: "",
-    codeLink: "",
-    tags: ["react", "node", "express"],
+    codeLink: "https://github.com/bipin0x01/py-port-scanner",
+    tags: ["socket programming", "python", "cli", "infosec", "security"],
+  },
+  {
+    title: "JWT Authentication",
+    description:
+      "A simple JWT authentication system or boilerplate that uses JWTWebtoken package for jwt implementation.",
+    tags: ["jwt", "jwtwebtoken", "nodejs", "authentication"],
+    codeLink: "https://github.com/bipin0x01/jwt-auth-with-nodejs",
+  },
+  {
+    title: "Web Login and Register UI",
+    description:
+      "A simple web login and register UI using pure CSS. It uses javascript for form validation.",
+    image:
+      "https://github.com/bipin0x01/Web-Login-and-Register-UI/blob/main/assets/images/login%20UI.png?raw=true",
+    demoLink: "https://bipin0x01.github.io/Web-Login-and-Register-UI/",
+    codeLink: "https://github.com/bipin0x01/Web-Login-and-Register-UI",
+    tags: ["css3", "html5", "javascript"],
   },
 ];
 
