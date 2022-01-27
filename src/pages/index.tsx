@@ -162,7 +162,7 @@ const blogdata = [
   },
 ];
 
-const timelineDate = [
+const timelineData = [
   {
     company: "Vines Software Innovation Company(VSIC)",
     position: "Web Developer Intern",
@@ -202,9 +202,18 @@ const timelineDate = [
   },
   {
     position: "Chief Technology Officer(CTO) and Web Developer Lead",
+    company: "Nest Nepal Pvt. Ltd.",
     from: 2020,
     to: "Present",
     roles: "Manage and Lead the team of web developers.",
+  },
+  {
+    position: "Web Developer Lead and Consultant",
+    company: "Kumari Tech International Pvt. Ltd.",
+    from: 2020,
+    to: "Present",
+    roles:
+      "Manage and Lead the team of web developers and suggest the company about the current prospects of upcoming projects and their quotation.",
   },
 ];
 
@@ -224,7 +233,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <Timeline>
-        {timelineDate.map((item, index) => (
+        {timelineData.map((item, index) => (
           <TimelineItem
             key={index}
             company={item.company}

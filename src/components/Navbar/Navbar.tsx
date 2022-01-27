@@ -5,11 +5,11 @@ import styles from "./Navbar.module.css";
 
 export default function MainNavbar() {
   const NavItems = [
-    { link: "#about", name: "About Me" },
-    { link: "#skills", name: "Skills" },
-    { link: "#projects", name: "Projects" },
-    { link: "#blogs", name: "Blogs" },
-    { link: "#contact", name: "Contact" },
+    { link: "/#about", name: "About Me" },
+    { link: "/#skills", name: "Skills" },
+    { link: "/#projects", name: "Projects" },
+    { link: "/#blog", name: "Blogs" },
+    { link: "/#contact", name: "Contact" },
   ];
 
   return (
