@@ -59,7 +59,7 @@ export default function Footer() {
           </small>
           <div className="container-fluid justify-content-center">
             {socialLinks.map((item, index) => (
-              <a target="_blank" key={index} href={item.link}>
+              <a target="_blank" rel="noreferrer" key={index} href={item.link}>
                 <button className="btn btn-link social mx-1">
                   {socialicons(item.name)}
                 </button>
