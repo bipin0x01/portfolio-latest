@@ -226,6 +226,18 @@ export default function Home() {
           name="description"
           content="Full Stack Web Developer and Infosec Enthusiast"
         />
+        <meta name="description" content="Free Web tutorials" />
+        <meta
+          name="keywords"
+          content="React, NestJs, Full Stack Web Development, Bipin Thapa, JavaScript, Typescript, Web Developer"
+        />
+        <meta name="author" content="Bipin Thapa" />
+        <meta name="robots" content="index,follow" />
+        <meta property="og:image" content="/static/pp.jpg" />
+        <meta
+          property="og:site_name"
+          content="Bipin Thapa - Personal Portfolio Site"
+        />
         <link rel="icon" href="../public/static/favicon.ico" />
       </Head>
       <Sidebar />
