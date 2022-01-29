@@ -261,7 +261,7 @@ export default function Home() {
       </Timeline>
       <SkillsetsSection />
       <ProjectsSection>
-        {projects.slice(0, 3).map((project, index) => (
+        {projects.map((project, index) => (
           <ProjectCard
             key={index}
             title={project.title}
