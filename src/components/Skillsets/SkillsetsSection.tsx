@@ -24,6 +24,21 @@ export default function SkillsetsSection() {
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png",
       name: "Python",
     },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
+      name: "JavaScript",
+    },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg/2560px-CSS3_and_HTML5_logos_and_wordmarks.svg.png",
+      name: "HTML",
+    },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png",
+      name: "MERN",
+    },
   ];
 
   const otherskills = [
@@ -49,7 +64,10 @@ export default function SkillsetsSection() {
             </h1>
           </div>
           <div className="row container toolslogo">
-            <div className="col">
+            <div
+              className="col"
+              style={{ justifyContent: "space-between", display: "flex" }}
+            >
               {mainskills.map((skill, index) => (
                 <SkillLogo key={index} img={skill.image} alt={skill.name} />
               ))}
