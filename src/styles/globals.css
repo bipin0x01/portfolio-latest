@@ -170,7 +170,7 @@ section#projects {
 }
 
 .project-image {
-  border-radius: 12px 12px 12px 0px;
+  border-radius: 12px 12px 12px 0;
   object-fit: cover;
 }
 .project.card:hover:not(.post) {
@@ -281,7 +281,7 @@ section#blog {
 }
 .blogcard-body p {
   font-size: 14px;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
   font-weight: 500;
 }
 .blogcard .user {
@@ -483,7 +483,7 @@ body::-webkit-scrollbar-thumb {
 
 .toolslogo-bg {
   opacity: 0.35;
-  transform: translate3d(0%, -290px, 0px);
+  transform: translate3d(0%, -290px, 0);
   display: grid;
 
   color: #8787a0;
@@ -737,7 +737,7 @@ section#sidebar {
   animation: circle-anim ease infinite;
   transform-origin: center;
   transform-box: fill-box;
-  perspective: 0px;
+  perspective: 0;
 }
 
 .circle.c1 {
