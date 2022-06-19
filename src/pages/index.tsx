@@ -241,10 +241,10 @@ export default function Home() {
           property="og:site_name"
           content="Bipin Thapa - Personal Portfolio Site"
         />
-        <Sidebar />
         <meta property="og:url" content="https://www.bipin00x1.com.np" />
         <link rel="icon" href="/static/favicon.ico" />
       </Head>
+      <Sidebar />
       <MainNavbar />
       <HeroSection />
       <AboutSection />
@@ -277,6 +277,7 @@ export default function Home() {
         {/* // See more button */}
         <div className="col-lg-12 text-center">
           <a
+            href="#projects"
             className="btn btn-outline-primary btn-md"
             role="button"
             onClick={() => {
