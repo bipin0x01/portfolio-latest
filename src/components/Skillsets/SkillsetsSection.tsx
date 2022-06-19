@@ -67,9 +67,8 @@ export default function SkillsetsSection() {
           </div>
           <div className="row container toolslogo text-center">
             {mainskills.map((skill, index) => (
-              <div className="col">
+              <div className="col" key={index}>
                 <SkillLogo
-                  key={index}
                   img={skill.image}
                   alt={skill.name}
                   size={skill.size ? skill.size : 2}
