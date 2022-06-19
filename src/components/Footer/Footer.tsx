@@ -16,11 +16,11 @@ export default function Footer() {
     },
     {
       name: "LinkedIn",
-      link: "https://www.linkedin.com/in/bipin-thapa-b9a8a11a4/",
+      link: "https://www.linkedin.com/in/bipin0x01/",
     },
     {
       name: "Twitter",
-      link: "https://twitter.com/bipin0x01",
+      link: "https://twitter.com/kaji0x01",
     },
     {
       name: "Instagram",
