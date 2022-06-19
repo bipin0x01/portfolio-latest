@@ -24,21 +24,38 @@ export default function SkillsetsSection() {
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png",
       name: "Python",
     },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png",
+      name: "Javascript",
+    },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png",
+      name: "TypeScript",
+    },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png",
+      name: "MERN Stack",
+      size: 4,
+    },
   ];
 
   const otherskills = [
-    { name: "CSS" },
-    { name: "JavaScript" },
-    { name: "React" },
-    { name: "Redux" },
-    { name: "Node" },
-    { name: "Express" },
-    { name: "MongoDB" },
-    { name: "Python" },
-    { name: "Django" },
-    { name: "SQL" },
-    { name: "CSS" },
+    "CSS",
+    "JavaScript",
+    "React",
+    "Redux",
+    "Node",
+    "Express",
+    "MongoDB",
+    "Python",
+    "Django",
+    "SQL",
+    "CSS",
   ];
+
   return (
     <>
       <section id="skills">
@@ -48,12 +65,17 @@ export default function SkillsetsSection() {
               <strong>Skills</strong>
             </h1>
           </div>
-          <div className="row container toolslogo">
-            <div className="col">
-              {mainskills.map((skill, index) => (
-                <SkillLogo key={index} img={skill.image} alt={skill.name} />
-              ))}
-            </div>
+          <div className="row container toolslogo text-center">
+            {mainskills.map((skill, index) => (
+              <div className="col">
+                <SkillLogo
+                  key={index}
+                  img={skill.image}
+                  alt={skill.name}
+                  size={skill.size ? skill.size : 2}
+                />
+              </div>
+            ))}
           </div>
         </div>
         <div data-tilt className="toolslogo-bg">
@@ -67,7 +89,7 @@ export default function SkillsetsSection() {
                   fontSize: random(8, 25),
                 }}
               >
-                {skill.name}
+                {skill}
               </p>
             ))}
           </span>
