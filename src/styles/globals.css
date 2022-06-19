@@ -231,8 +231,7 @@ section#projects {
 
 section#blog {
   background-image: url(/static/blog-bg.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 #blog {

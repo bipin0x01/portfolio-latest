@@ -238,10 +238,10 @@ export default function Home() {
           property="og:site_name"
           content="Bipin Thapa - Personal Portfolio Site"
         />
+        <Sidebar />
         <meta property="og:url" content="https://www.bipin00x1.com.np" />
         <link rel="icon" href="/static/favicon.ico" />
       </Head>
-      <Sidebar />
       <MainNavbar />
       <HeroSection />
       <AboutSection />
@@ -272,7 +272,7 @@ export default function Home() {
         ))}
       </ProjectsSection>
       <BlogSection>
-        {blogdata &&
+        {blogdata.length > 0 &&
           blogdata.map((blog, index) => (
             <BlogCard
               key={index}
@@ -285,7 +285,9 @@ export default function Home() {
             />
           ))}
         {!blogdata.length && (
-          <p className="text-muted text-center ">No Blogs Found</p>
+          <h4 className="text-muted my-4 container text-center p-4">
+            No Blogs Found
+          </h4>
         )}
       </BlogSection>
       <ContactSection />
