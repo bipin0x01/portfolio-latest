@@ -1,88 +1,78 @@
 /* Header */
 
+.particles {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px !important;
+  position: fixed;
+}
 
-  .particles{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 700px!important;
-    position: fixed;
-  }
+.header .site-title {
+  font-size: 50px;
+  display: block;
+  line-height: 1;
+  color: #fff;
+  width: 100%;
+}
 
-  .header .site-title {
-    font-size: 50px;
-    display: block;
-    line-height: 1;
-    color: #fff;
-    width: 100%;
-  }
-  
-  .header .site-description {
-    font-size: 20px;
-    display: block;
-    line-height: 1;
-    color: #fff;
-    margin-top: 10px;
-  }
-  
-  
-  .header-icons {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .header-links {
-    margin: 10px;
-  }
-  
-  .header-links .link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-    margin: 10px;
-  }
-  
-  
-  .down {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
-    animation: jumpInfinite 1s infinite;
-    
-  }
+.header .site-description {
+  font-size: 20px;
+  display: block;
+  line-height: 1;
+  color: #fff;
+  margin-top: 10px;
+}
 
+.header-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
-  @keyframes jumpInfinite {
-    0% {
-      margin-top: 0;
-    }
-    50% {
-      margin-top: 20px;
-    }
-    100% {
-      margin-top: 0;
-    }
-  }
-  
-  
-  .down, .header-icons .icon {
-    color: #fff;
-    text-align: center;
-  }
-  
+.header-links {
+  margin: 10px;
+}
 
-  
-  
-  /* Image */
-  .ProfilePic {
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
+.header-links .link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.down {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+  animation: jumpInfinite 1s infinite;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
   }
-  
-  
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.down,
+.header-icons .icon {
+  color: #fff;
+  text-align: center;
+}
+
+/* Image */
+.ProfilePic {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}

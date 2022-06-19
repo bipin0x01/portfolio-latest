@@ -16,8 +16,6 @@ import {
   ProjectCard,
   Footer,
 } from "../components";
-import { Button } from "react-bootstrap";
-import Link from "next/link";
 
 const projects = [
   {
@@ -154,14 +152,14 @@ const projects = [
 ];
 
 const blogdata = [
-  {
-    title: "Audit Management System",
-    image: "https://via.placeholder.com/250",
-    description: "This is a blog description",
-    author: "Kaji",
-    date: "2020",
-    tags: ["react", "node", "express"],
-  },
+  // {
+  //   title: "Audit Management System",
+  //   image: "https://via.placeholder.com/250",
+  //   description: "This is a blog description",
+  //   author: "Kaji",
+  //   date: "2020",
+  //   tags: ["react", "node", "express"],
+  // },
 ];
 
 const timelineData = [
@@ -274,17 +272,21 @@ export default function Home() {
         ))}
       </ProjectsSection>
       <BlogSection>
-        {blogdata.map((blog, index) => (
-          <BlogCard
-            key={index}
-            title={blog.title}
-            Img={blog.image}
-            description={blog.description}
-            author={blog.author}
-            date={blog.date}
-            tags={blog.tags}
-          />
-        ))}
+        {blogdata &&
+          blogdata.map((blog, index) => (
+            <BlogCard
+              key={index}
+              title={blog.title}
+              Img={blog.image}
+              description={blog.description}
+              author={blog.author}
+              date={blog.date}
+              tags={blog.tags}
+            />
+          ))}
+        {!blogdata.length && (
+          <p className="text-muted text-center ">No Blogs Found</p>
+        )}
       </BlogSection>
       <ContactSection />
       <Footer />

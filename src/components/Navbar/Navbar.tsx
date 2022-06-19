@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useState } from "react";
 import { Navbar, Nav, Row, Container } from "react-bootstrap";
 import styles from "./Navbar.module.css";
 

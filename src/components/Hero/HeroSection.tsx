@@ -35,9 +35,9 @@ export default function HeroSection({
   return (
     <section id="home">
       <div id="particles-js">
-        <div className={styles.particles}>
+        {/* <div className={styles.particles}>
           <Particles options={particlesOptions} />
-        </div>
+        </div> */}
         <div className="header">
           <div className="width-auto">
             <Tilt>
