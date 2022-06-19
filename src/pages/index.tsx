@@ -16,6 +16,7 @@ import {
   ProjectCard,
   Footer,
 } from "../components";
+import { useState } from "react";
 
 const projects = [
   {
@@ -218,6 +219,8 @@ const timelineData = [
 ];
 
 export default function Home() {
+  const [showMore, setShowMore] = useState(false);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -259,7 +262,7 @@ export default function Home() {
       </Timeline>
       <SkillsetsSection />
       <ProjectsSection>
-        {projects.map((project, index) => (
+        {(showMore ? projects : projects.slice(0, 6)).map((project, index) => (
           <ProjectCard
             key={index}
             title={project.title}
@@ -270,6 +273,23 @@ export default function Home() {
             tags={project.tags}
           />
         ))}
+
+        {/* // See more button */}
+        <div className="col-lg-12 text-center">
+          <a
+            className="btn btn-outline-primary btn-md"
+            role="button"
+            onClick={() => {
+              if (showMore) {
+                setShowMore(false);
+              } else {
+                setShowMore(true);
+              }
+            }}
+          >
+            {showMore ? "See Less" : "See More"}
+          </a>
+        </div>
       </ProjectsSection>
       <BlogSection>
         {blogdata.length > 0 &&

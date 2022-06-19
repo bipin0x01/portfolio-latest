@@ -16,17 +16,6 @@ export default function ProjectsSection({ children }) {
             <div className="row m-n5">
               {/* Projects */}
               {children}
-
-              {/* // See more button */}
-              <div className="col-lg-12 text-center">
-                <a
-                  href="#skills"
-                  className="btn btn-outline-primary btn-md"
-                  role="button"
-                >
-                  See more
-                </a>
-              </div>
             </div>
           </div>
         </div>
