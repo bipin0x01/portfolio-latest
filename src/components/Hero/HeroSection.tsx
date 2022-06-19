@@ -40,17 +40,15 @@ export default function HeroSection({
         </div> */}
         <div className="header">
           <div className="width-auto">
-            <Tilt>
-              <Image
-                className={styles.ProfilePic}
-                src={img}
-                alt="Profile Picture"
-                height={240}
-                width={240}
-                placeholder="blur"
-                blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
-              />
-            </Tilt>
+            <Image
+              className={styles.ProfilePic}
+              src={img}
+              alt="Profile Picture"
+              height={240}
+              width={240}
+              placeholder="blur"
+              blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
+            />
           </div>
 
           <h1 style={{ marginBottom: "-20px" }}>
