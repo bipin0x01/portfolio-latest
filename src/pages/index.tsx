@@ -26,7 +26,7 @@ const projects = [
     description:
       "An IMS designed to manage audit firms. It is a web application based on MERN Stack. It can be used to keep the data of audit firms,their employees, clients and their respective audit reports.",
     demoLink: "https://auditmanagementthapa.herokuapp.com/login",
-    codeLink: "https://github.com/bipin0x01/AuditManagement",
+    codeLink: "#",
     tags: [
       "react",
       "node",
