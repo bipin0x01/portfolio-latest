@@ -4,8 +4,9 @@ import { FaDownload, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 const sidebarLinks = {
   facebook: "https://www.facebook.com/bt.kaji",
   github: "https://github.com/bipin0x01",
-  linkedin: "https://www.linkedin.com/in/bipin-thapa-73bb09203/",
-  resume: "https://resume.io/r/LNfoPCIaz",
+  linkedin: "https://www.linkedin.com/in/bipin0x01/",
+  resume:
+    "https://github.com/bipin0x01/bipin0x01/raw/main/BipinThapa-Resume-202208.pdf",
 };
 
 export default function Sidebar() {
