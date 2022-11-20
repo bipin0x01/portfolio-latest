@@ -6,7 +6,7 @@ const sidebarLinks = {
   github: "https://github.com/bipin0x01",
   linkedin: "https://www.linkedin.com/in/bipin0x01/",
   resume:
-    "https://github.com/bipin0x01/bipin0x01/raw/main/BipinThapa-Resume-202208.pdf",
+    "https://github.com/bipin0x01/bipin0x01/raw/main/BipinThapa_Resume.pdf",
 };
 
 export default function Sidebar() {
