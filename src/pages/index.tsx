@@ -245,7 +245,7 @@ export default function Home() {
         <link rel="icon" href="/static/favicon.ico" />
       </Head>
       <Sidebar />
-<!--       <MainNavbar /> -->
+      {/*<MainNavbar />*/}
       <HeroSection />
       <AboutSection />
       <Timeline>
