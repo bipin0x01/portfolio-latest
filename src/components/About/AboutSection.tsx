@@ -9,13 +9,7 @@ export default function AboutSection() {
         </div>
 
         <p>
-          Hi I am <strong>Bipin Thapa</strong>,<br />
-          An infosec enthusiast, wannabe hacker and freelance web developer with
-          content writing hobby. I love learning how things work. I shifted to
-          breaking things after realizing that I was better at breaking than in
-          creating, while working as a web developer. LOL 😂 I spend most of my
-          my time solving vulnerable labs, doing individual security researches
-          and CTFs(more often).
+          Efficient Fullstack Web Developer, undergoing Bachelor degree in Computer Security and more than 3 years of experience in challenging development environments. Excellent communication and organizational abilities with resourceful approach to solving diverse problems. Deadline-driven and knowledgeable professional with strong desire to learn and contribute to team success. Successful at improving usability, performance and functionality by applying skills in different JS and related frameworks. Collaborative and hardworking team player with critical thinking skills and systematic approach.
         </p>
         {/* <h2 className="mb-3 text-center" id="skillsets">
           <strong>Things I do</strong>
