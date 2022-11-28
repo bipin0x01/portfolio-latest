@@ -17,7 +17,7 @@ export default function AboutSection() {
           my time solving vulnerable labs, doing individual security researches
           and CTFs(more often).
         </p>
-        <h2 className="mb-3 text-center" id="skillsets">
+<!--         <h2 className="mb-3 text-center" id="skillsets">
           <strong>Things I do</strong>
         </h2>
         <div className="row">
@@ -41,7 +41,7 @@ export default function AboutSection() {
                   animation: "slideInLeft",
                 }}
               ></div>
-            </div>
+            </div> -->
           </div>
           <div className="col-lg">
             <div className="row justify-content-between align-items-center">
