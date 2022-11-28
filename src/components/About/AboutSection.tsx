@@ -41,7 +41,7 @@ export default function AboutSection() {
                   animation: "slideInLeft",
                 }}
               ></div>
-            </div> */}
+            </div> 
           </div>
           <div className="col-lg">
             <div className="row justify-content-between align-items-center">
@@ -65,7 +65,7 @@ export default function AboutSection() {
               ></div>
             </div>
           </div>
-        </div>
+        </div>*/}
       </div>
     </section>
   );
